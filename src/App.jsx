@@ -12,50 +12,13 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route
-                    path="/"
-                    element={
-                        <Layout>
-                            <Dashboard />
-                        </Layout>
-                    }
-                />
-
-                <Route
-                    path="/calendar"
-                    element={
-                        <Layout>
-                            <Calendar />
-                        </Layout>
-                    }
-                />
-
-                <Route
-                    path="/subjects"
-                    element={
-                        <Layout>
-                            <Subjects />
-                        </Layout>
-                    }
-                />
-
-                <Route
-                    path="/statistics"
-                    element={
-                        <Layout>
-                            <Statistics />
-                        </Layout>
-                    }
-                />
-
-                <Route
-                    path="/settings"
-                    element={
-                        <Layout>
-                            <Settings />
-                        </Layout>
-                    }
-                />
+                <Route element={<Layout />}>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/calendar" element={<Calendar />} />
+                    <Route path="/subjects" element={<Subjects />} />
+                    <Route path="/statistics" element={<Statistics />} />
+                    <Route path="/settings" element={<Settings />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
