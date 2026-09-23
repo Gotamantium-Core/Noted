@@ -1,6 +1,6 @@
-# Attendance Tracker
+# Noted -- Intuitive Attendance Tracker
 
-A client-side web app for tracking college attendance, built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
+Noted is a client-side web app for tracking college attendance, built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
 
 Enter your subjects, set up a weekly timetable, then mark each period as attended, absent, or free. The dashboard computes current attendance percentages, how many classes you can still skip, and which subjects need attention — all while keeping your data private in the browser.
 
