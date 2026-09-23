@@ -1,27 +1,67 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
 
-import Layout from "./components/layout/Layout";
+    BrowserRouter,
 
-import Dashboard from "./pages/Dashboard";
-import Calendar from "./pages/Calendar";
-import Subjects from "./pages/Subjects";
-import Statistics from "./pages/Statistics";
-import Settings from "./pages/Settings";
+    Routes,
 
-function App() {
+    Route,
+
+} from "react-router-dom";
+
+import Sidebar from "./components/Sidebar";
+
+import DashboardPage from "./pages/DashboardPage";
+
+import SubjectsPage from "./pages/SubjectsPage";
+
+import TimetablePage from "./pages/TimetablePage";
+
+import CalendarPage from "./pages/CalendarPage";
+
+
+
+export default function App() {
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<Layout />}>
-                    <Route path="/" element={<Dashboard />} />
-                    <Route path="/calendar" element={<Calendar />} />
-                    <Route path="/subjects" element={<Subjects />} />
-                    <Route path="/statistics" element={<Statistics />} />
-                    <Route path="/settings" element={<Settings />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
-}
 
-export default App;
+        <BrowserRouter>
+
+            <div className="flex min-h-screen dark:bg-gray-950 dark:text-gray-100">
+
+                <Sidebar />
+
+                <main className="flex-1 overflow-auto p-8">
+
+                    <Routes>
+
+                        <Route
+                            path="/"
+                            element={<DashboardPage />}
+                        />
+
+                        <Route
+                            path="/subjects"
+                            element={<SubjectsPage />}
+                        />
+
+                        <Route
+                            path="/timetable"
+                            element={<TimetablePage />}
+                        />
+
+                        <Route
+                            path="/calendar"
+                            element={<CalendarPage />}
+                        />
+
+                    </Routes>
+
+                </main>
+
+            </div>
+
+        </BrowserRouter>
+
+    );
+
+}
