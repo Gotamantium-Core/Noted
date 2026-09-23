@@ -1,16 +1,16 @@
-# Noted -- Intuitive Attendance Tracker
+# Noted
 
 Noted is a client-side web app for tracking college attendance, built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
 
-Enter your subjects, set up a weekly timetable, then mark each period as attended, absent, or free. The dashboard computes current attendance percentages, how many classes you can still skip, and which subjects need attention — all while keeping your data private in the browser.
+Enter your subjects, set up a weekly timetable, then mark each period as attended, absent, or free. The dashboard computes current attendance percentages, how many classes you can still skip, and which subjects need attention, all while keeping your data private in the browser.
 
 ## Features
 
-- **Subjects** — add and remove subjects with a name and code.
-- **Weekly Timetable** — build a timetable for Mon–Fri across 6 periods (09–10 through 15–16) and assign a subject to each slot.
-- **Day Attendance** — open any date on the calendar and mark each period as **Attended**, **Absent**, **Free**, or unmarked. Changes are staged until you hit save.
-- **Calendar** — browse months, see which days are working days vs. holidays, and toggle any date's status. For working days on weekends, you can borrow the timetable from a weekday.
-- **Dashboard** — set semester start/end dates and a per-subject minimum attendance target. For each subject it shows:
+- **Subjects**:  add and remove subjects with a name and code.
+- **Weekly Timetable**:  build a timetable for Mon–Fri across 6 periods (09–10 through 15–16) and assign a subject to each slot.
+- **Day Attendance**:  open any date on the calendar and mark each period as **Attended**, **Absent**, **Free**, or unmarked. Changes are staged until you hit save.
+- **Calendar**: browse months, see which days are working days vs. holidays, and toggle any date's status. For working days on weekends, you can borrow the timetable from a weekday.
+- **Dashboard**:  set semester start/end dates and a per-subject minimum attendance target. For each subject it shows:
   - Attended / total classes and percentage
   - A progress bar against the minimum target
   - Remaining classes in the semester
@@ -22,7 +22,7 @@ Enter your subjects, set up a weekly timetable, then mark each period as attende
 - [Vite](https://vite.dev/)
 - [Tailwind CSS 4](https://tailwindcss.com/)
 - [React Router 7](https://reactrouter.com/)
-- [lucide-react](https://lucide.dev/) for icons
+- [lucide-react](https://lucide.dev/) (for icons)
 
 ## Getting Started
 
@@ -31,9 +31,9 @@ npm install
 npm run dev
 ```
 
-Open the local URL Vite prints (typically `http://localhost:5173`) in your browser.
+Open the local URL Vite prints in your browser.
 
-There is no backend and no account system — all data is stored in your browser's `localStorage`, so it stays on your device.
+There is no backend and no account system. All data is stored in your browser's `localStorage`, so it stays on your device.
 
 ## Available Scripts
 
